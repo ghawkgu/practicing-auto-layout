@@ -6,16 +6,16 @@
 //  Copyright (c) 2012 Yi Gu. All rights reserved.
 //
 
-#import "PALViewController.h"
+#import "PALKeyboardViewController.h"
 
-@interface PALViewController ()
+@interface PALKeyboardViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *keyboardHeight;
 - (IBAction)dismissKeyboard:(id)sender;
 
 @end
 
-@implementation PALViewController
+@implementation PALKeyboardViewController
 
 - (void)didReceiveMemoryWarning
 {
@@ -54,13 +54,13 @@
     BOOL isPortrait = UIDeviceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation);
     CGFloat height = isPortrait ? keyboardFrame.size.height : keyboardFrame.size.width;
     NSLog(@"The keyboard height is: %f", height);
-
+    
     NSLog(@"Updating constraints.");
     [UIView animateWithDuration:animationDuration animations:^{
         // Because the "space" is actually the difference between the bottom lines of the 2 views,
         // we need to set a negative constant value here.
         self.keyboardHeight.constant = -height;
-        [self.view setNeedsLayout];
+        [self.view layoutIfNeeded];
     }];
 }
 
@@ -69,7 +69,7 @@
     NSTimeInterval animationDuration = [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     [UIView animateWithDuration:animationDuration animations:^{
         self.keyboardHeight.constant = 0;
-        [self.view setNeedsLayout];
+        [self.view layoutIfNeeded];
     }];
 }
 

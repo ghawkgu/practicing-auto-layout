@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1yD-pm-hHZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--Keyboard View Controller - Keyboard Demo-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="PALKeyboardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="" translatesAutoresizingMaskIntoConstraints="NO" id="Mlr-d3-ZJQ">
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.  Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ7-EE-R3D">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mdV-Df-HH4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Dissmiss keyboard">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="2" eventType="touchUpInside" id="v21-1Y-PjE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hZ7-EE-R3D" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="user" id="3rR-lv-CnF"/>
+                            <constraint firstItem="hZ7-EE-R3D" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="HYd-Fk-4WG"/>
+                            <constraint firstItem="Mlr-d3-ZJQ" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="TsW-zp-CpK"/>
+                            <constraint firstItem="hZ7-EE-R3D" firstAttribute="top" secondItem="Mlr-d3-ZJQ" secondAttribute="bottom" type="user" id="VfZ-vA-rrh"/>
+                            <constraint firstItem="Mlr-d3-ZJQ" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="Xfa-To-eUj"/>
+                            <constraint firstItem="hZ7-EE-R3D" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="mwd-vn-iho"/>
+                            <constraint firstItem="Mlr-d3-ZJQ" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="zCI-An-dKQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Keyboard Demo" id="ccr-nK-LGw"/>
+                    <connections>
+                        <outlet property="keyboardHeight" destination="3rR-lv-CnF" id="0Iu-Ov-PEv"/>
+                        <outlet property="textView" destination="Mlr-d3-ZJQ" id="mws-ES-NXA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="13"/>
+        </scene>
+        <!--Animation View Controller - Animation Demo-->
+        <scene sceneID="71k-GK-iH1">
+            <objects>
+                <viewController id="BB6-Lu-fM1" customClass="PALAnimationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBk-0e-UMp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quY-F9-Jvs">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" type="user" id="Nha-DW-4gJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHI-jI-ORv">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Test Animation">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAnimation:" destination="BB6-Lu-fM1" eventType="touchUpInside" id="1XU-qv-eUy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xHI-jI-ORv" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="89k-5m-5bh"/>
+                            <constraint firstItem="quY-F9-Jvs" firstAttribute="top" secondItem="aBk-0e-UMp" secondAttribute="top" constant="20" symbolic="YES" type="user" id="IN4-pR-7JY"/>
+                            <constraint firstItem="xHI-jI-ORv" firstAttribute="leading" secondItem="aBk-0e-UMp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pis-zy-vFs"/>
+                            <constraint firstItem="quY-F9-Jvs" firstAttribute="leading" secondItem="aBk-0e-UMp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ovn-us-3Ib"/>
+                            <constraint firstAttribute="trailing" secondItem="quY-F9-Jvs" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="s2M-mm-zTc"/>
+                            <constraint firstAttribute="bottom" secondItem="xHI-jI-ORv" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wdX-vr-CTz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animation Demo" id="i5f-Ot-dhC"/>
+                    <connections>
+                        <outlet property="redView" destination="quY-F9-Jvs" id="DsY-jI-WLt"/>
+                        <outlet property="topSpacing" destination="IN4-pR-7JY" id="zpX-h6-fMq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTf-Ww-V5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="771"/>
+        </scene>
+        <!--Table View Controller - Practicing Auto Layout-->
+        <scene sceneID="hPV-sU-sTI">
+            <objects>
+                <tableViewController id="eXM-Lp-bsx" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kBH-un-HQg">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="808-8f-zry">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="h9e-Vx-pIk" style="IBUITableViewCellStyleDefault" id="U6U-2s-hCH">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Keyboard sensitive layout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9e-Vx-pIk">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="2" kind="push" id="AXZ-hA-VF0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="s4t-vt-7Gv" style="IBUITableViewCellStyleDefault" id="IXr-b0-M6h">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Sample Animation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4t-vt-7Gv">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="BB6-Lu-fM1" kind="push" id="dBY-fx-tSs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Jhc-oJ-gXD">
+                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Practicing Auto Layout" id="bwD-7M-rjd">
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="azN-An-Qwm"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgX-eD-bqx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="13"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SHj-qB-07s">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="1yD-pm-hHZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a1r-Kn-u6L">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eXM-Lp-bsx" kind="relationship" relationship="rootViewController" id="LhN-b6-zPZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTU-cq-vfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520" y="13"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PALAnimationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PALAnimationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="redView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="topSpacing" candidateClass="NSLayoutConstraint"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

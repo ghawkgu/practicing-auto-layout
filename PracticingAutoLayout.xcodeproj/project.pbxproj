@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E02EBF201612A398003585E8 /* PALAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBF1F1612A398003585E8 /* PALAnimationViewController.m */; };
 		E086C9A0160E0B8A00E6F4D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E086C99F160E0B8A00E6F4D1 /* UIKit.framework */; };
 		E086C9A2160E0B8A00E6F4D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E086C9A1160E0B8A00E6F4D1 /* Foundation.framework */; };
 		E086C9A4160E0B8B00E6F4D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E086C9A3160E0B8A00E6F4D1 /* CoreGraphics.framework */; };
@@ -17,26 +18,28 @@
 		E086C9B4160E0B8B00E6F4D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E086C9B3160E0B8B00E6F4D1 /* Default@2x.png */; };
 		E086C9B6160E0B8B00E6F4D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E086C9B5160E0B8B00E6F4D1 /* Default-568h@2x.png */; };
 		E086C9B9160E0B8B00E6F4D1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E086C9B7160E0B8B00E6F4D1 /* MainStoryboard.storyboard */; };
-		E086C9BC160E0B8B00E6F4D1 /* PALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E086C9BB160E0B8B00E6F4D1 /* PALViewController.m */; };
+		E086C9BC160E0B8B00E6F4D1 /* PALKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E086C9BB160E0B8B00E6F4D1 /* PALKeyboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E086C99B160E0B8A00E6F4D1 /* KeyboardSensitiveLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardSensitiveLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02EBF1E1612A398003585E8 /* PALAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PALAnimationViewController.h; sourceTree = "<group>"; };
+		E02EBF1F1612A398003585E8 /* PALAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PALAnimationViewController.m; sourceTree = "<group>"; };
+		E086C99B160E0B8A00E6F4D1 /* PracticingAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticingAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E086C99F160E0B8A00E6F4D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E086C9A1160E0B8A00E6F4D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E086C9A3160E0B8A00E6F4D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E086C9A7160E0B8B00E6F4D1 /* KeyboardSensitiveLayout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyboardSensitiveLayout-Info.plist"; sourceTree = "<group>"; };
+		E086C9A7160E0B8B00E6F4D1 /* PracticingAutoLayout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PracticingAutoLayout-Info.plist"; sourceTree = "<group>"; };
 		E086C9A9160E0B8B00E6F4D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E086C9AB160E0B8B00E6F4D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E086C9AD160E0B8B00E6F4D1 /* KeyboardSensitiveLayout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyboardSensitiveLayout-Prefix.pch"; sourceTree = "<group>"; };
+		E086C9AD160E0B8B00E6F4D1 /* PracticingAutoLayout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PracticingAutoLayout-Prefix.pch"; sourceTree = "<group>"; };
 		E086C9AE160E0B8B00E6F4D1 /* PALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PALAppDelegate.h; sourceTree = "<group>"; };
 		E086C9AF160E0B8B00E6F4D1 /* PALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PALAppDelegate.m; sourceTree = "<group>"; };
 		E086C9B1160E0B8B00E6F4D1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E086C9B3160E0B8B00E6F4D1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E086C9B5160E0B8B00E6F4D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E086C9B8160E0B8B00E6F4D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E086C9BA160E0B8B00E6F4D1 /* PALViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PALViewController.h; sourceTree = "<group>"; };
-		E086C9BB160E0B8B00E6F4D1 /* PALViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PALViewController.m; sourceTree = "<group>"; };
+		E086C9BA160E0B8B00E6F4D1 /* PALKeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PALKeyboardViewController.h; sourceTree = "<group>"; };
+		E086C9BB160E0B8B00E6F4D1 /* PALKeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PALKeyboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +59,7 @@
 		E086C990160E0B8A00E6F4D1 = {
 			isa = PBXGroup;
 			children = (
-				E086C9A5160E0B8B00E6F4D1 /* KeyboardSensitiveLayout */,
+				E086C9A5160E0B8B00E6F4D1 /* PracticingAutoLayout */,
 				E086C99E160E0B8A00E6F4D1 /* Frameworks */,
 				E086C99C160E0B8A00E6F4D1 /* Products */,
 			);
@@ -65,7 +68,7 @@
 		E086C99C160E0B8A00E6F4D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E086C99B160E0B8A00E6F4D1 /* KeyboardSensitiveLayout.app */,
+				E086C99B160E0B8A00E6F4D1 /* PracticingAutoLayout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,26 +83,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E086C9A5160E0B8B00E6F4D1 /* KeyboardSensitiveLayout */ = {
+		E086C9A5160E0B8B00E6F4D1 /* PracticingAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
 				E086C9AE160E0B8B00E6F4D1 /* PALAppDelegate.h */,
 				E086C9AF160E0B8B00E6F4D1 /* PALAppDelegate.m */,
 				E086C9B7160E0B8B00E6F4D1 /* MainStoryboard.storyboard */,
-				E086C9BA160E0B8B00E6F4D1 /* PALViewController.h */,
-				E086C9BB160E0B8B00E6F4D1 /* PALViewController.m */,
+				E086C9BA160E0B8B00E6F4D1 /* PALKeyboardViewController.h */,
+				E086C9BB160E0B8B00E6F4D1 /* PALKeyboardViewController.m */,
+				E02EBF1E1612A398003585E8 /* PALAnimationViewController.h */,
+				E02EBF1F1612A398003585E8 /* PALAnimationViewController.m */,
 				E086C9A6160E0B8B00E6F4D1 /* Supporting Files */,
 			);
-			path = KeyboardSensitiveLayout;
+			path = PracticingAutoLayout;
 			sourceTree = "<group>";
 		};
 		E086C9A6160E0B8B00E6F4D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E086C9A7160E0B8B00E6F4D1 /* KeyboardSensitiveLayout-Info.plist */,
+				E086C9A7160E0B8B00E6F4D1 /* PracticingAutoLayout-Info.plist */,
 				E086C9A8160E0B8B00E6F4D1 /* InfoPlist.strings */,
 				E086C9AB160E0B8B00E6F4D1 /* main.m */,
-				E086C9AD160E0B8B00E6F4D1 /* KeyboardSensitiveLayout-Prefix.pch */,
+				E086C9AD160E0B8B00E6F4D1 /* PracticingAutoLayout-Prefix.pch */,
 				E086C9B1160E0B8B00E6F4D1 /* Default.png */,
 				E086C9B3160E0B8B00E6F4D1 /* Default@2x.png */,
 				E086C9B5160E0B8B00E6F4D1 /* Default-568h@2x.png */,
@@ -110,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E086C99A160E0B8A00E6F4D1 /* KeyboardSensitiveLayout */ = {
+		E086C99A160E0B8A00E6F4D1 /* PracticingAutoLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E086C9BF160E0B8B00E6F4D1 /* Build configuration list for PBXNativeTarget "KeyboardSensitiveLayout" */;
+			buildConfigurationList = E086C9BF160E0B8B00E6F4D1 /* Build configuration list for PBXNativeTarget "PracticingAutoLayout" */;
 			buildPhases = (
 				E086C997160E0B8A00E6F4D1 /* Sources */,
 				E086C998160E0B8A00E6F4D1 /* Frameworks */,
@@ -122,9 +127,9 @@
 			);
 			dependencies = (
 			);
-			name = KeyboardSensitiveLayout;
+			name = PracticingAutoLayout;
 			productName = PractisingAutoLayout;
-			productReference = E086C99B160E0B8A00E6F4D1 /* KeyboardSensitiveLayout.app */;
+			productReference = E086C99B160E0B8A00E6F4D1 /* PracticingAutoLayout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +142,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Yi Gu";
 			};
-			buildConfigurationList = E086C995160E0B8A00E6F4D1 /* Build configuration list for PBXProject "KeyboardSensitiveLayout" */;
+			buildConfigurationList = E086C995160E0B8A00E6F4D1 /* Build configuration list for PBXProject "PracticingAutoLayout" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E086C99A160E0B8A00E6F4D1 /* KeyboardSensitiveLayout */,
+				E086C99A160E0B8A00E6F4D1 /* PracticingAutoLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -176,7 +181,8 @@
 			files = (
 				E086C9AC160E0B8B00E6F4D1 /* main.m in Sources */,
 				E086C9B0160E0B8B00E6F4D1 /* PALAppDelegate.m in Sources */,
-				E086C9BC160E0B8B00E6F4D1 /* PALViewController.m in Sources */,
+				E086C9BC160E0B8B00E6F4D1 /* PALKeyboardViewController.m in Sources */,
+				E02EBF201612A398003585E8 /* PALAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +261,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KeyboardSensitiveLayout/KeyboardSensitiveLayout-Prefix.pch";
-				INFOPLIST_FILE = "KeyboardSensitiveLayout/KeyboardSensitiveLayout-Info.plist";
-				PRODUCT_NAME = KeyboardSensitiveLayout;
+				GCC_PREFIX_HEADER = "PracticingAutoLayout/PracticingAutoLayout-Prefix.pch";
+				INFOPLIST_FILE = "PracticingAutoLayout/PracticingAutoLayout-Info.plist";
+				PRODUCT_NAME = PracticingAutoLayout;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -266,9 +272,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KeyboardSensitiveLayout/KeyboardSensitiveLayout-Prefix.pch";
-				INFOPLIST_FILE = "KeyboardSensitiveLayout/KeyboardSensitiveLayout-Info.plist";
-				PRODUCT_NAME = KeyboardSensitiveLayout;
+				GCC_PREFIX_HEADER = "PracticingAutoLayout/PracticingAutoLayout-Prefix.pch";
+				INFOPLIST_FILE = "PracticingAutoLayout/PracticingAutoLayout-Info.plist";
+				PRODUCT_NAME = PracticingAutoLayout;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -276,7 +282,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E086C995160E0B8A00E6F4D1 /* Build configuration list for PBXProject "KeyboardSensitiveLayout" */ = {
+		E086C995160E0B8A00E6F4D1 /* Build configuration list for PBXProject "PracticingAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E086C9BD160E0B8B00E6F4D1 /* Debug */,
@@ -285,7 +291,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E086C9BF160E0B8B00E6F4D1 /* Build configuration list for PBXNativeTarget "KeyboardSensitiveLayout" */ = {
+		E086C9BF160E0B8B00E6F4D1 /* Build configuration list for PBXNativeTarget "PracticingAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E086C9C0160E0B8B00E6F4D1 /* Debug */,
